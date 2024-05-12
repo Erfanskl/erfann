@@ -1,0 +1,160 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('abu2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+header nav ul li:nth-child(3):after,
+header nav ul li:nth-child(4):after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+
+main {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    flex: 1;
+    text-align: center;
+}
+
+aside img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-media-footer {
+    margin-top: 10px;
+}
+
+.social-media-footer a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media-footer img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #3498db; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.skill {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+.project-container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #2ecc71; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.project img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-container,
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill,
+    .project {
+        margin: 20px 0;
+    }
+}
